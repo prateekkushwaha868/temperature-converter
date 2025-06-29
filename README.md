@@ -11,7 +11,7 @@ Hey there, fellow coder! 👋 Welcome to the **Temperature Converter**—a simpl
    ```bash
    git clone https://github.com/YOUR_USERNAME/temperature-converter.git
    cd temperature-converter
-````
+
 
 2. **Build & Run**
    You’ll need Java 17 and Maven installed on your machine:
@@ -23,7 +23,7 @@ Hey there, fellow coder! 👋 Welcome to the **Temperature Converter**—a simpl
 
 3. **Open in your browser**
    Head over to [http://localhost:8080](http://localhost:8080) and start converting!
-
+````
 ---
 ## ✨ Features
 
