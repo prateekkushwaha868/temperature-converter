@@ -19,10 +19,31 @@ public class TemperatureController {
 			result = value * 9/5 + 32;
 			resultLabel = String.format("%.2f °C = %.2f °F", value, result);
 		}
-		else {
+		else if("f2c".equals(scale)){
             result = (value - 32) * 5/9;
             resultLabel = String.format("%.2f °F = %.2f °C", value, result);
         }
+		else if("k2c".equals(scale)){
+			 result = value - 273.15;
+	         resultLabel = String.format("%.2f °K = %.2f °C", value, result);
+		}
+
+		else if("c2k".equals(scale)){
+			 result = value +273.15;
+	         resultLabel = String.format("%.2f °C = %.2f °K", value, result);
+		}
+		else if("k2f".equals(scale)){
+			 result = (value - 273.15) * 5/9 + 32;
+	         resultLabel = String.format("%.2f °K = %.2f °F", value, result);
+		}
+
+		else if("f2k".equals(scale)){
+			 result = (value - 32) * 5/9 + 273.15;
+	         resultLabel = String.format("%.2f °F = %.2f °K", value, result);
+		}
+		else {
+			return "";
+		}
 		
 		model.addAttribute("result", resultLabel);
 		return "index";
